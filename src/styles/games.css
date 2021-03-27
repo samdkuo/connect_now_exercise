@@ -1,0 +1,21 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.filter-form select {
+  margin: 5px 0 1em 0;
+  height: 2em;
+  background-color: var(--input-background);
+  border: none;
+}
+
+.filter-form::placeholder {
+  color: white;
+}
