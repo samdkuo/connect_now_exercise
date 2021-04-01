@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/connect_now_exercise/static/css/main.6fce66e0.chunk.css",
+    "main.css": "/connect_now_exercise/static/css/main.1ad55dd8.chunk.css",
     "main.js": "/connect_now_exercise/static/js/main.d5759605.chunk.js",
     "main.js.map": "/connect_now_exercise/static/js/main.d5759605.chunk.js.map",
     "runtime-main.js": "/connect_now_exercise/static/js/runtime-main.bc514787.js",
@@ -12,14 +12,14 @@
     "static/js/3.4d947cfd.chunk.js.map": "/connect_now_exercise/static/js/3.4d947cfd.chunk.js.map",
     "index.html": "/connect_now_exercise/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/connect_now_exercise/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.6fce66e0.chunk.css.map": "/connect_now_exercise/static/css/main.6fce66e0.chunk.css.map",
+    "static/css/main.1ad55dd8.chunk.css.map": "/connect_now_exercise/static/css/main.1ad55dd8.chunk.css.map",
     "static/js/2.6b97a474.chunk.js.LICENSE.txt": "/connect_now_exercise/static/js/2.6b97a474.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bc514787.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.6b97a474.chunk.js",
-    "static/css/main.6fce66e0.chunk.css",
+    "static/css/main.1ad55dd8.chunk.css",
     "static/js/main.d5759605.chunk.js"
   ]
 }
