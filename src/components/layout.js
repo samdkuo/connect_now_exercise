@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
               <p className={`link-back ${active === index ? "visible" : ""}`}>
                 {link.back.toUpperCase()}
               </p>
-              <Link className="link" to={link.link} onClick={() => setActive(index)}>
+              <Link className="link" to={`${link.link}`} onClick={() => setActive(index)}>
                 {link.name.toUpperCase()}
               </Link>
             </div>

@@ -10,8 +10,8 @@ function App() {
     <Router.BrowserRouter>
       <Layout>
         <Router.Switch>
-          <Router.Route exact path={"/"} component={Games} />
-          <Router.Route exact path={"/contact"} component={Contact} />
+          <Router.Route exact path={"/connect_now_exercise"} component={Games} />
+          <Router.Route exact path={"/connect_now_exercise/contact"} component={Contact} />
         </Router.Switch>
       </Layout>
     </Router.BrowserRouter>
