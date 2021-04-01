@@ -4,8 +4,8 @@ import "../styles/layout.css";
 
 const Layout = ({ children }) => {
   const linkList = [
-    { name: "video games", back: "video", link: "/" },
-    { name: "contact", back: "contact", link: "/contact" },
+    { name: "video games", back: "video", link: "/connect_now_exercise" },
+    { name: "contact", back: "contact", link: "/connect_now_exercise/contact" },
   ];
   const [active, setActive] = React.useState(0);
 
