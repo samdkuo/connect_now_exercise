@@ -1,6 +1,6 @@
 :root {
   --background-color: linear-gradient(#081221, #03080f);
-  --card-background: #0e1a2b; 
+  --card-background: #0e1a2b;
   --input-background: #182c47;
   --heading-text: #fff;
   --text: #c1d1e8;
@@ -13,36 +13,26 @@ body {
   color: var(--text);
 }
 
-.App {
-  margin: 0 10%;
+p {
+  font-size: 12px;
+  font-family: "Mulish", "Arial";
+  margin: 0;
 }
 
-.App-header {
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-header a{
-  color: white;
-  text-decoration: none;
-  padding: 0 10px;
-}
-
-.App-header a:focus {
-  color: blue;
-}
-.App-link {
-  color: #61dafb;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  margin: 0;
+  font-family: "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .form {
   background-color: var(--card-background);
-  padding: 1.5em;
+  height: fit-content;
 }
 
 .form h3 {
@@ -50,23 +40,36 @@ body {
   margin-bottom: 1em;
 }
 
-.form input, textarea {
-  margin: 5px 0 1em 0;
-  height: 2em;
+.form input,
+textarea,
+button {
+  margin: 0 0 1em 0;
+  padding: 0.35em 1em;
   background-color: var(--input-background);
+  color: var(--text);
   border: none;
+  outline: none;
+  font-size: small;
 }
 
 .form textarea {
-  height:fit-content;
+  height: fit-content;
 }
 
 .form button {
   background-color: var(--buttons);
+  padding: 0.4em 1.4em;
   color: white;
   width: fit-content;
-  padding: .5em 1.5em;
-  border: none;
   align-self: flex-end;
+  outline: none;
+  font-size: small;
 }
 
+.form ::placeholder {
+  color: var(--text);
+}
+
+.hide {
+  display: nones;
+}

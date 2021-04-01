@@ -3,6 +3,7 @@ import "./App.css";
 import Layout from "./components/layout";
 import Contact from "./pages/Contact";
 import Games from "./pages/Games";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

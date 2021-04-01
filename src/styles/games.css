@@ -1,21 +1,251 @@
-.main {
+.filter-main {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 250px 1fr;
+  grid-column-gap: 25px;
+  margin-top: 8vh;
+  height: fit-content;
 }
 
 .filter-form {
   display: flex;
   flex-direction: column;
   color: white;
+  margin: auto;
+  padding: 1.5em;
 }
 
-.filter-form select {
-  margin: 5px 0 1em 0;
-  height: 2em;
-  background-color: var(--input-background);
-  border: none;
+#filter-heading{ 
+  font-size: larger;
+  margin-bottom: 5px;
+}
+
+.filter-form label, input {
+  font-size: small;
+}
+
+.filter-form label {
+  margin-top: 10px;
 }
 
 .filter-form::placeholder {
   color: white;
 }
+
+
+#order-input {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  width: 100%;
+  /* justify-content: space-between; */
+}
+
+#icon-button {
+  align-self: flex-start;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+#filter-dropdown {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.3em;
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 1em;
+  border-radius: 0;
+  background-color: var(--input-background);
+  color: var(--text);
+  border: none;
+  outline: none;
+  /* text-align: start; */
+}
+
+#filter-dropdown:focus,#filter-dropdown:active:focus,#filter-dropdown.active:focus,
+#filter-dropdown.focus,#filter-dropdown:active.focus,#filter-dropdown.active.focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#dropdown-menu {
+  background-color: var(--input-background);
+  width: 100%;
+}
+
+#dropdown-menu a {
+  color: var(--text);
+  font-size: small;
+}
+
+#dropdown-menu a:hover{
+  background-color: var(--input-background);
+}
+
+/* cards */
+.game-container {
+  display: grid;
+  grid-row-gap: 15px;
+}
+
+.game-card {
+  background-color: var(--card-background);
+  color: white;
+  display: grid;
+  grid-template-columns: 110px 1fr 3em;
+  align-items: center;
+  justify-items: flex-start;
+}
+
+.game-image {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.game-content {
+  display: grid;
+  grid-template-rows: auto;
+  width: 95%;
+  padding: 1em 0.5em;
+}
+
+.game-name {
+  font-size: larger;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2em;
+}
+
+.game-summary {
+  height: 100%;
+  font-size: small;
+  line-height: 1.2em;
+}
+
+.game-rating {
+  background-color: var(--buttons);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-rating p {
+  margin: 0;
+  font-size: larger;
+  width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  .filter-main {
+    grid-template-columns: 1fr;
+    grid-row-gap: 45px;
+    margin-top: 5vh;
+  }
+
+  .game-container {
+    grid-row-gap: 30px;
+  }
+
+  .filter-form {
+    display: grid;
+    grid-template-columns: 120px 1fr 80px;
+    grid-column-gap: 25px;
+    align-items: center;
+  }
+
+  #filter-heading{
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #name-label {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  #name-input{
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  #score-label {
+    grid-row: 4;
+    grid-column: 1;
+  }
+
+  #score-input{
+    grid-row: 5;
+    grid-column: 1;
+  }
+
+  #order-label {
+    grid-row: 4;
+    grid-column: 2;
+  }
+
+  #order-input{
+    grid-row: 5;
+    grid-column: 2;
+  }
+
+  #clear-button{
+    grid-row: 5;
+    grid-column: 3;
+    margin-top: 0;
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .filter-form {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .filter-form input, select {
+    width: calc(100% - 2em);
+  }
+
+  #order-input, #clear-button {
+    width: 100%;
+  }
+
+  .game-card {
+    position: relative;
+    display: grid;
+    height: fit-content;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .game-image {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    grid-row: 1;
+  }
+  
+  .game-content {
+    display: grid;
+    grid-template-rows: 1fr 30px 3em;
+    width: 95%;
+    padding: 1em 0.5em;
+    grid-row: 2;
+  }
+  
+  .game-rating {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
+
