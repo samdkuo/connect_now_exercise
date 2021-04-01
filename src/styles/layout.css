@@ -9,7 +9,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -45,7 +44,7 @@
 
 .link {
   position: absolute;
-  margin: 30px 0 0 10px; 
+  margin: 20px 0 0 10px; 
   z-index: 2;
   font-size: x-large;
   font-weight:500;
